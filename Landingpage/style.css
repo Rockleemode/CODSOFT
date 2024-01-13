@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
 /* reset styles */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
 }
 /* top main page */
 .primary{
@@ -42,10 +44,15 @@
     margin-left: 100px;   
 }
 /* side two styles */
-.side_two nav, ul{
+.side_two nav{
     display: flex;
     gap: 15px;
     justify-content: center;
+}
+
+.side_two nav ul{
+    display: flex;
+    gap: 15px;
 }
 
 .side_two ul li{
@@ -127,6 +134,71 @@
  .the_why .wallet, .map, .dash, .calendar, .search, .to-do{
     margin-top: 30px;
  }
+
+ /* sign list section */
+ .sign_up{
+    display: flex;
+    justify-content: center;    
+    padding: 100px 0;
+    background-color: rgb(250, 236, 238);
+ }
+ .sign_up .requirements{
+    margin-right: 5%;
+ }
+ .sign_up h2{
+    position: relative;
+    bottom: 80px;
+    left:20%
+ }
+ /* how to dash */
+ .the_how{
+    text-align: center;
+ }
+
+ .FAQ{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .FAQ h2    {
+    text-align: center;
+ }      
+ summary{
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 3px;
+    box-shadow:3px 3px 5px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);        
+ }
+
+ footer{
+    display: flex;
+    gap: 30px;
+    background-color: rgb(42, 41, 41);
+    color: white;
+    padding: 30px;
+ }
+ footer ul{
+    list-style-type: none;
+ }
+
+ footer .stores{
+    padding: 15px;
+ }
+footer .social_media{
+    padding: 0 20px;
+    gap: 20px;
+ }
+
+ .social_media img[alt="facebook"], img[alt="twitter"]{
+    margin-right: 30px;
+ }
+
+
 
  @media screen and (max-width:831px) {
     .form_details button{
