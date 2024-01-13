@@ -1,17 +1,116 @@
+/* reset styles */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* top main page */
 .primary{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
 }
 .side_one{
-    column-span: 70%;
+    background-color: rgb(247, 231, 233);
+    padding: 10px;
 }
 
-.side_two{
-    column-span: 30%;
+/* the doordash logo styles */
+.logo .doordash{
+    margin-left: 20px;
+    background-image:url('assets/doordashLogo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
 }
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logo a{
+    text-decoration: none;
+    color: red;
+    font-weight: 800;
+    font-size: larger;
+}
+/* mobile phone style */
+.primary .phone img{
+    margin-left: 100px;   
+}
+/* side two styles */
+.side_two nav, ul{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.side_two ul li{
+    list-style-type: none;
+}
+
+.side_two button{
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 13px;
+        padding: 7px 20px;
+        margin-bottom: 8px;
+}
+.side_two header{
+    margin-top: 20px;
+}
+.side_two .login_text{
+    margin:40px 20px;
+}
+
+.side_two .login_text h2{
+    font-size: 50px;
+}
+.side_two .login_text p{
+    margin-top:10px;
+    color: grey;
+}
+
+.form_details{
+    column-gap: 20px;
+}
+
+.form_details button{
+    margin-left: -50px;
+    padding:11px 50px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.form_details input{
+    padding: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 20px;
+    width: 60%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.form_details #sign_up{
+    position: relative;
+    top: 20px;
+    color: red; 
+    font-weight: 900; 
+    font-size: large;
+}
+.form_details, .login_text{
+    padding-left: 20px;
+}
+.side_two select{
+    padding: 2px 6px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+ }
+ @media screen and (max-width:831px) {
+    .form_details button{
+       padding: 10px 20px;
+    }
+ }
