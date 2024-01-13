@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.primary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.side_one{
+    column-span: 70%;
+}
+
+.side_two{
+    column-span: 30%;
+}
