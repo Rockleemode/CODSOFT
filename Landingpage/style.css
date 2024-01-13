@@ -109,6 +109,25 @@
     border-radius: 8px;
     margin-bottom: 8px;
  }
+  /* what is doordash */
+  .the_what{ 
+    text-align: center;
+    background-color: rgba(245, 241, 241, 0.866);
+ }
+ .the_what h2,  .the_what p{
+    padding: 20px 300px;
+
+ }
+
+ /* why deliver with DoorDash */
+ .the_why{
+    text-align: center;
+    padding: 20px; 
+ }
+ .the_why .wallet, .map, .dash, .calendar, .search, .to-do{
+    margin-top: 30px;
+ }
+
  @media screen and (max-width:831px) {
     .form_details button{
        padding: 10px 20px;
